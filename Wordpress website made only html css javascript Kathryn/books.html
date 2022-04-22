@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* books heading */
+    .books-container {
+      width: 100%;
+      min-height: 500px;
+      background-color: #fcebe7;
+    }
+
+    .inner-books-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      top: 200px;
+    }
+
+    .inner-books-container h1 {
+      font-size: 5rem;
+      font-weight: 400;
+      font-family: "DM Serif Display", serif;
+      color: var(--ast-global-color-2);
+      margin: 0px 0px 10px 0px;
+    }
+
+    .inner-books-container p {
+      font-size: 1.9rem;
+      font-family: "Sora", sans-serif;
+      font-weight: 400;
+      line-height: 2.0;
+    }
+
+    /* This Dark Road to Mercy body */
+    .main-section {
+      margin: 50px 0px;
+    }
+
+    .element-background-overlay {
+      background-color: white;
+    }
+
+    /* Smoke And The Heart */
+    .smoke-container .smoke-container-inner {
+      flex-direction: column;
+    }
+
+    .smoke-container-inner .smoke-container-child {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin: 0px 0px 50px 0px;
+    }
+
+    .smoke-container-child p {
+      margin: 40px 0px 10px 0px;
+    }
+
+    .smoke-container-child .title {
+      font-size: 5.2rem;
+      font-weight: 400;
+      font-family: "DM Serif Display", serif;
+      line-height: 1.3;
+    }
+
+    .main-books {
+      width: 100%;
+      height: auto;
+    }
+
+    .main-books-inner {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      /* margin: 20px 20px; */
+    }
+
+    .item-one-by-one {
+      text-align: center;
+      margin: 0px 0px 80px 0px;
+    }
+
+    .main-books-inner .item-one-by-one h3 {
+      font-size: 1.8rem;
+      margin: 20px 0px;
+    }
+
+    .btn-read-more {
+      margin: 10px 0px;
+    }
+
+
+    /* Buy a Complete Series */
+    .main-section .main-child .child {
+    top: 50px;
+}
+
+    /* book heading */
+    @media (max-width: 44em) {
+      .books-container {
+        min-height: 300px;
+      }
+
+      .inner-books-container {
+        top: 100px;
+        text-align: center;
+      }
+
+      .inner-books-container h1 {
+        font-size: 3.0rem;
+      }
+
+      .inner-books-container p {
+        font-size: 1.5rem;
+        margin: 10px 0px;
+
+      }
+    }
+
+    /* Smoke And The Heart media queary */
+    @media (max-width: 38em) {
+      .item-one-by-one .book-cover {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    /* Buy a Complete Series media queary */
+    @media (max-width: 38em) {
+      .bundle-img {
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- create navbar -->
+  <nav class="header">
+    <img src="/img/Logo/logo-dark.svg" alt="logo" class="logo" />
+    <input type="checkbox" id="click" />
+    <label for="click" class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <ul class="list">
+      <li><a href="index.html" class="list-item" target="_blank">Home</a></li>
+      <li>
+        <a href="books.html" class="list-item" target="_blank">Books</a>
+      </li>
+      <li><a href="bio.html" class="list-item" target="_blank">Bio</a></li>
+      <li>
+        <a href="contact.html" class="list-item" target="_blank">Contact</a>
+      </li>
+    </ul>
+    <nav class="icon">
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-cart-arrow-down"></i>
+    </nav>
+  </nav>
+
+  <!-- books heading -->
+  <div class="books-container">
+    <div class="inner-books-container">
+      <h1>Books</h1>
+      <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit
+      </p>
+    </div>
+  </div>
+
+  <!-- This Dark Road to Mercy body -->
+  <section class="main-section">
+    <div class="element-background-overlay">
+      <section class="main-child">
+        <div class="child">
+          <p class="child-one-p">New Release</p>
+          <h1>
+            This Dark
+            <br />
+            Road to Mercy
+          </h1>
+          <p class="child-two-p">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.
+          </p>
+          <div class="button">
+            <button class="btn-one">
+              <a href="#" class="btn-link-one">$6.75 – Purchase</a>
+            </button>
+            <button class="btn-two">
+              <ion-icon name="logo-amazon"></ion-icon>READ ON KINDLE
+            </button>
+          </div>
+        </div>
+        <img src="/img/hero-image01.png" alt="This is a image01" class="book" />
+      </section>
+    </div>
+  </section>
+
+  <!-- devide -->
+  <div class="devider"></div>
+
+  <!-- Smoke And The Heart -->
+  <div class="smoke-container">
+    <div class="smoke-container-inner">
+      <div class="smoke-container-child">
+        <p>Complete Series Of</p>
+        <h2 class="title">Smoke And The Heart</h2>
+        <p class="description">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit.
+        </p>
+      </div>
+
+      <div class="main-books">
+        <div class="main-books-inner">
+          <div class="item-one-by-one">
+            <img src="/img/book-cover1.png" alt="" class="book-cover" />
+            <h3>This Dark Road to Mercy</h3>
+            <button class="btn-read-more">
+              <a href="#" class="btn-link">$6.75-Purchase</a>
+            </button>
+          </div>
+          <div class="item-one-by-one">
+            <img src="/img/book-cover2.png" alt="" class="book-cover" />
+            <h3>Liar Of Dreams</h3>
+            <button class="btn-read-more">
+              <a href="#" class="btn-link">$6.00-Purchase</a>
+            </button>
+          </div>
+          <div class="item-one-by-one">
+            <img src="/img/book-cover3.png" alt="" class="book-cover" />
+            <h3>Before The Devil Breaks You</h3>
+            <button class="btn-read-more">
+              <a href="#" class="btn-link">$6.00-Purchase</a>
+            </button>
+          </div>
+          <div class="item-one-by-one">
+            <img src="/img/book-cover4.png" alt="" class="book-cover" />
+            <h3>Now You See Me</h3>
+            <button class="btn-read-more">
+              <a href="#" class="btn-link">$5.00-Purchase</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buy a Complete Series -->
+  <section class="main-section">
+    <div class="element-background-overlay">
+      <section class="main-child">
+        <div class="child">
+          <h1>
+            Buy a Complete
+            <br />
+            Series
+          </h1>
+          <p class="child-two-p">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+            aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.
+          </p>
+          <div class="button">
+            <button class="btn-one">
+              <a href="#" class="btn-link-one">$24.00 – Purchase</a>
+            </button>
+          </div>
+        </div>
+        <img src="/img/bundle.png" alt="" class="bundle-img" />
+      </section>
+    </div>
+  </section>
+
+  <!-- upcoming books -->
+  <div class="main-parent">
+    <div class="img-child">
+      <img src="/img/upcoming-image2.png" alt="This is a image01" class="girl" />
+    </div>
+    <div class="text">
+      <h2>Upcoming Book</h2>
+      <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+        tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem.
+      </p>
+      <button class="btn-read-more">
+        <a href="#" class="btn-link">NOTIFY ME</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- Subscribe Now to Get Regular Updates -->
+
+  <div class="subscribe">
+    <div class="subscribe-inner">
+      <div class="subscribe-child">
+        <h2>Subscribe Now to Get <br> Regular Updates</h2>
+        <!-- subscribe form -->
+        <div class="wrapper">
+          <form action="#" class="card-content">
+            <div class="form-input">
+              <label for="email"></label>
+              <input type="email" placeholder="Your Email" />
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="subscribe-img">
+        <img src="/img/susbcribe-image.png" alt="" class="img-child">
+      </div>
+    </div>
+  </div>
+
+
+ <!-- footer -->
+ <footer class="footer">
+  <img src="/img/Logo/logo-white.svg" alt="logo" class="logo-footer" />
+  </label>
+  <ul class="list-footer">
+    <li><a href="#" class="list-item-footer">Home</a></li>
+    <li><a href="#" class="list-item-footer">Books</a></li>
+    <li><a href="#" class="list-item-footer">Bio</a></li>
+    <li><a href="#" class="list-item-footer">Contact</a></li>
+  </ul>
+  <div class="icon-footer">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+</footer>
+
+<footer class="footer-end">
+  <div class="footer-copyright">
+    <p> Copyright &copy; <span id="date">2020</span> eBook Author | Powered by eBook Author
+    </p>
+
+  </div>
+</footer>
+
+<!-- back to top button -->
+<a class="scroll-link top-link" href="#">
+  <i class="fa-solid fa-angles-up"></i>
+</a>
+
+  <!-- this is for icon script -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+
+  <script src="app.js"></script>
+</body>
+
+</html>

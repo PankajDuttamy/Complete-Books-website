@@ -1,0 +1,888 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --wp--preset--font-size--normal: 16px;
+  --wp--preset--font-size--huge: 42px;
+}
+
+:root {
+  --e-global-color-astglobalcolor0: #e95930;
+  --e-global-color-astglobalcolor1: #946659;
+  --e-global-color-astglobalcolor2: #171921;
+  --e-global-color-astglobalcolor3: #30333a;
+  --e-global-color-astglobalcolor4: #fffaf8;
+  --e-global-color-astglobalcolor5: #ffffff;
+  --e-global-color-astglobalcolor6: #f2f5f7;
+  --e-global-color-astglobalcolor7: #424242;
+  --e-global-color-astglobalcolor8: #000000;
+}
+:root {
+  --ast-global-color-0: #e95930;
+  --ast-global-color-1: #946659;
+  --ast-global-color-2: #171921;
+  --ast-global-color-3: #30333a;
+  --ast-global-color-4: #fffaf8;
+  --ast-global-color-5: #ffffff;
+  --ast-global-color-6: #f2f5f7;
+  --ast-global-color-7: #424242;
+  --ast-global-color-8: #000000;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+body {
+  background-color: var(--ast-global-color-5);
+  background-image: none;
+  /* overflow-x: hidden; */
+}
+
+/* header  */
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px 50px 30px 100px;
+}
+.header .logo {
+  height: 42px;
+}
+.list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.list .list-item {
+  font-size: 1.563rem;
+  font-family: "Sora", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  color: rgb(0, 0, 0);
+}
+.list .list-item:hover {
+  color: var(--ast-global-color-0);
+}
+.icon {
+  font-size: 1.9rem;
+}
+
+.icon .fa-solid {
+  margin: 0px 10px;
+  color: var(--ast-global-color-1);
+  cursor: pointer;
+  transition: transform 0.9s;
+}
+.icon .fa-solid:hover {
+  transform: scale(1.5);
+}
+.menu-btn {
+  font-size: 1.688rem;
+  display: none;
+}
+#click {
+  display: none;
+}
+
+/* ==============================================================This Dark Road to Mercy body================================================================ */
+.main-section {
+  width: 100%;
+  height: auto;
+}
+.element-background-overlay {
+  background-color: #fcebe7;
+}
+.main-section .main-child {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main-section .main-child .child {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  top: 200px;
+  flex-wrap: wrap;
+}
+.child .child-one-p {
+  color: var(--e-global-color-astglobalcolor1);
+  font-size: 18px;
+  margin: 0px 0px 20px 0px;
+}
+.child h1 {
+  color: var(--ast-global-color-2);
+  font-size: 4.6rem;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+}
+.child .child-two-p {
+  margin: 20px 0px;
+  font-size: 20px;
+  margin: 20px 0px;
+  line-height: 2;
+}
+.button {
+  margin: 20px 0px;
+}
+.btn-one {
+  padding: 14px 28px;
+  background-color: var(--ast-global-color-1);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+}
+.btn-two {
+  padding: 14px 28px;
+  line-height: 1.3em;
+  background-color: var(--e-global-color-astglobalcolor5);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  margin: 0px 15px;
+}
+.btn-two:hover,
+.btn-link-two:hover {
+  background-color: var(--ast-global-color-0);
+  color: white;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.btn-one .btn-link-one {
+  text-decoration: none;
+  color: white;
+}
+
+.book {
+  position: relative;
+  top: 100px;
+  box-shadow: 0 50px 35px -20px rgb(0 0 0 / 23%);
+}
+/* devide */
+.devider {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  min-height: 150px;
+  margin: 0px 0px 100px 0px;
+}
+
+/* AS FEATURED ON */
+.featured {
+  width: 100%;
+  height: auto;
+}
+.featured-chid-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 0px 50px 0px;
+}
+.featured-chid-heading h5 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.featured-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* A Word From The Author */
+
+.main-parent {
+  width: 100%;
+  height: auto;
+  margin: 200px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-parent .img-child {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-parent .text {
+  width: 50%;
+  height: auto;
+}
+.main-parent .text h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  line-height: 3.3;
+}
+.main-parent .text p {
+  font-size: 20px;
+  line-height: 2;
+  color: var(--ast-global-color-3);
+  margin: 0px 0px 20px 0px;
+}
+.btn-read-more {
+  padding: 14px 28px;
+  background-color: var(--ast-global-color-1);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn-read-more .btn-link {
+  color: white;
+  text-decoration: none;
+}
+.btn-read-more:hover {
+  background-color: var(--ast-global-color-0);
+  transition: all 0.2s linear;
+}
+.ruler {
+  margin: 10px 0px 0px 0px;
+}
+.ruler hr {
+  border: 2px solid var(--ast-global-color-7);
+}
+.main-parent .text-icon {
+  width: 50%;
+  height: auto;
+}
+.text-icon h5 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  margin: 20px 0px;
+}
+.text-icon .span-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  display: block;
+  line-height: 1;
+  color: var(--ast-global-color-3);
+  margin: 20px 0px;
+}
+.text-icon .icon {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  display: block;
+  line-height: 1;
+  cursor: pointer;
+}
+.text-icon .fa-brands {
+  margin: 0px 10px 0px 0px;
+  color: var(--ast-global-color-1);
+  transition: transform 0.9s;
+}
+.text-icon .fa-brands:hover {
+  transform: scale(1.5);
+}
+
+/* Smoke And The Heart */
+.smoke-container {
+  width: 100%;
+  height: auto;
+  background-color: var(--e-global-color-astglobalcolor4);
+  margin: 100px 0px;
+}
+.smoke-container .smoke-container-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.smoke-container-inner .smoke-container-child {
+  width: 50%;
+  height: auto;
+  padding: 0px 20px;
+}
+.smoke-container-child p {
+  color: var(--e-global-color-astglobalcolor1);
+  font-size: 2.3rem;
+  margin: 0px 0px 20px 0px;
+}
+.smoke-container-child .title {
+  font-size: 2.8rem;
+  margin: 20px 0px;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  line-height: 1.3;
+}
+.smoke-container-child .description {
+  font-size: 20px;
+  line-height: 2;
+  color: var(--ast-global-color-3);
+  margin: 10px 0px 20px 0px;
+}
+.smoke-container-child .btn-complete-series {
+  padding: 14px 28px;
+  background-color: var(--ast-global-color-1);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.smoke-container-child .btn-complete-series:hover {
+  background-color: var(--ast-global-color-0);
+  transition: all 0.2s linear;
+}
+.smoke-container-child .btn-complete-series a {
+  color: white;
+  text-decoration: none;
+}
+
+.smoke-container-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50%;
+  height: auto;
+  gap: 2rem;
+}
+
+/* What Readers Are Saying */
+.review-container {
+  width: 100%;
+  height: auto;
+}
+.review-container-overlay {
+  background-color: #fcebe7;
+}
+.all-items {
+  display: flex;
+  padding: 100px 0px;
+}
+.review-container-first {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  justify-content: center;
+  width: 50%;
+}
+.review-container-first h2 {
+  font-size: 2.9rem;
+  margin: 0px 0px 30px 0px;
+}
+.review-container-first p {
+  font-size: 2rem;
+  margin: 0px 0px 30px 0px;
+  line-height: 3.5rem;
+}
+
+.two-review-inner {
+  margin: 10px;
+  width: 50%;
+}
+.four-review-inner {
+  display: flex;
+}
+.four-review-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px 8px 8px 8px;
+  margin: 0px 0px 10px 0px;
+  padding: 30px;
+}
+.container-para {
+  font-size: 2rem;
+  margin: 0px 0px 15px;
+}
+.person-name {
+  font-size: 1.9rem;
+  margin: 10px 0px;
+}
+.reviewer {
+  font-size: 1.5rem;
+}
+
+/* Subscribe Now to Get Regular Updates */
+.subscribe {
+  width: 100%;
+  height: auto;
+  background-color: #fcebe7;
+}
+.subscribe-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0px 100px 0px;
+}
+.subscribe-child {
+  width: 50%;
+}
+
+/* subscribe form */
+.subscribe-child h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  margin: 0px 0px 50px 0px;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.card-content {
+  width: 100%;
+  height: auto;
+}
+.form-input {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+input {
+  color: #666;
+  padding: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eaeaea;
+  border-radius: 2px;
+  background: #fafafa;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  width: 70%;
+  height: auto;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
+}
+.subscribe-btn {
+  padding: 10px 25px;
+  background-color: var(--ast-global-color-1);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  width: 20%;
+  height: auto;
+}
+.subscribe-btn:hover {
+  background-color: var(--ast-global-color-0);
+  color: white;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+/* subscribe-img */
+.subscribe-img {
+  width: 35%;
+  height: auto;
+}
+.subscribe-img .img-child {
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--ast-global-color-2);
+  color: white;
+  padding: 30px 0px;
+  align-items: center;
+}
+.footer .logo-footer {
+  height: 42px;
+}
+.list-footer {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.list-item-footer {
+  font-size: 1.563rem;
+  font-family: "Sora", sans-serif;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  color: rgb(255, 255, 255);
+}
+.list-item-footer:hover {
+  color: var(--ast-global-color-0);
+}
+.icon-footer {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.icon-footer .fa-brands {
+  margin: 0px 10px;
+  transition: transform 0.9s;
+}
+.icon-footer .fa-brands:hover {
+  transform: scale(1.5);
+}
+
+/* footerend */
+.footer-end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ast-global-color-3);
+  min-height: 80px;
+}
+.footer-copyright p {
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Sora", sans-serif;
+  letter-spacing: 2px;
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: #023047;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
+  color: white;
+  animation: bounce 3s ease-in-out infinite;
+
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+/* header mobile responsive */
+@media (max-width: 62em) {
+  .header {
+    background-color: rgb(247, 243, 243);
+    padding: 20px 40px;
+  }
+  .list {
+    position: fixed;
+    top: 8rem;
+    left: -100%;
+    background-color: #111;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    text-align: center;
+    transition: all 0.6s linear;
+  }
+  /* open menu */
+  #click:checked ~ .list {
+    left: 0%;
+  }
+
+  .list li {
+    margin: 40px 0px;
+  }
+  .list .list-item {
+    font-size: 1.875rem;
+    color: white;
+  }
+  .list .list-item:hover {
+    color: cyan;
+    background: none;
+  }
+  .icon {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  /* close menu */
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+}
+@media (max-width: 32em) {
+  .header {
+    width: 100%;
+    height: auto;
+  }
+  .header .logo {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* This Dark Road to Mercy body mobile resposive */
+@media (max-width: 69em) {
+  .main-section .main-child {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-section .main-child .child {
+    display: block;
+    width: 100%;
+    position: static;
+    top: 0px;
+    padding: 50px;
+  }
+}
+@media (max-width: 38em) {
+  .main-section .main-child .child {
+    padding: 20px;
+  }
+  .child .child-one-p {
+    font-size: 20px;
+    margin: 30px 0px;
+  }
+  .child .child-two-p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+  }
+  .child h1 {
+    font-size: 3rem;
+  }
+  .button {
+    text-align: center;
+  }
+  .btn-one {
+    display: inline-block;
+    margin: 0px 0px 20px 0px;
+    padding: 10px 20px;
+    width: 50%;
+  }
+  .btn-two {
+    display: inline-block;
+    margin: 0px 0px 20px 0px;
+    padding: 10px 20px;
+    width: 50%;
+    background-color: var(--ast-global-color-1);
+    color: white;
+  }
+  .book {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* A Word From The Author */
+@media (max-width: 69em) {
+  .main-parent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 44em) {
+  .smoke-container {
+    margin: 50px 0px;
+  }
+  .main-parent .text {
+    width: 100%;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .main-parent .text h2 {
+    font-size: 3rem;
+    line-height: 1.9;
+    margin: 20px 0px;
+  }
+  .main-parent .img-child {
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+  }
+  .main-parent .img-child .girl {
+    width: 100%;
+    height: auto;
+  }
+  .main-parent .text p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin: 0px 0px 20px 0px;
+  }
+  .main-parent .text .btn-read-more {
+    margin: 0px 0px 20px;
+  }
+  .main-parent .text-icon {
+    width: 100%;
+  }
+  .text-icon .icon {
+    font-size: 2.9rem;
+    margin: 20px 0px;
+  }
+}
+
+/* Smoke And The Heart */
+@media (max-width: 69em) {
+  .smoke-container .smoke-container-inner {
+    flex-direction: column;
+  }
+  .smoke-container-inner .smoke-container-child {
+    width: 100%;
+    margin: 100px 0px;
+    text-align: center;
+  }
+  .smoke-container-img {
+    justify-content: center;
+    align-items: center;
+  }
+  .smoke-container-img img {
+    flex-direction: column;
+  }
+}
+@media (max-width: 44em) {
+  .smoke-container-img .book-cover {
+    width: 100%;
+    height: auto;
+  }
+  .smoke-container-child p {
+    font-size: 20px;
+  }
+  .smoke-container-child .title {
+    font-size: 2.2rem;
+  }
+  .smoke-container-child .btn-complete-series {
+    padding: 15px;
+  }
+}
+
+/* What Readers Are Saying */
+@media (max-width: 69em) {
+  .all-items {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .review-container-first {
+    padding: 30px;
+    width: 100%;
+  }
+  .review-container-first h2 {
+    font-size: 2rem;
+    margin: 0px 0px 20px 0px;
+  }
+  .review-container-first p {
+    font-size: 1.5rem;
+    margin: 0px 0px 20px 0px;
+    line-height: 2.5rem;
+  }
+  .two-review-inner {
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+  }
+}
+@media (max-width: 44em) {
+  .four-review-container {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    height: auto;
+  }
+  .review-container-first {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* Subscribe Now to Get Regular Updates */
+@media (max-width: 57em) {
+  .subscribe-inner {
+    padding: 0px;
+    width: 100%;
+  }
+  .subscribe-child h2 {
+    margin: 20px 0px;
+    font-size: 2.9rem;
+  }
+  .subscribe-img img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .subscribe-child {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .form-input {
+    align-items: center;
+    justify-content: center;
+  }
+  input {
+    width: 100%;
+    margin: 20px;
+  }
+  .subscribe-btn {
+    margin: 20px 0px;
+    padding: 20px;
+  }
+}
+@media (max-width: 34em) {
+  .subscribe-btn {
+    width: 50%;
+    padding: 10px;
+  }
+}
+
+/* footer */
+@media (max-width: 50em) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .logo-footer {
+    margin: 0px 0px 20px 0px;
+  }
+  .list-footer {
+    margin: 0px 0px 20px 0px;
+  }
+  .icon-footer {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+/* footerend */
+@media (max-width: 50em) {
+  .footer-end {
+    width: 100%;
+    min-height: auto;
+  }
+  .footer-copyright p {
+    font-size: 1.2rem;
+    padding: 30px;
+    line-height: 2.9;
+  }
+}

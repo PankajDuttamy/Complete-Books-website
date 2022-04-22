@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* contact heading */
+
+        .contact {
+            width: 100%;
+            height: auto;
+            background-color: #fcebe7;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .inner-contact {
+            padding: 150px 0px;
+            text-align: center;
+        }
+
+        .contact h1 {
+            font-size: 5rem;
+            font-weight: 400;
+            font-family: "DM Serif Display", serif;
+            color: var(--ast-global-color-2);
+            margin: 0px 0px 10px 0px;
+        }
+
+        .contact p {
+            font-size: 1.5rem;
+            line-height: 4.9;
+            font-family: "Sora", sans-serif;
+            font-weight: 400;
+            color: var(--ast-global-color-2);
+        }
+
+        /* contact form */
+        .container {
+            width: 100%;
+            height: auto;
+            background: var(--e-global-color-astglobalcolor5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-form-page {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 4vw;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            position: relative;
+            top: -100px;
+            box-shadow: 0 0 49px 0 rgb(0 0 0 / 8%);
+            transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+        }
+
+        .contact-form-page h3 {
+            color: var(--ast-global-color-2);
+            font-weight: 800;
+            margin: 20px 0px;
+            font-size: 2.9rem;
+        }
+
+        .contact-form-page p {
+            font-size: 1.5rem;
+            margin: 0px 0px 25px 0px;
+        }
+
+        .icon-contact {
+            margin: 20px 0px;
+        }
+
+        .ruler {
+            margin: 10px 0px 30px 0px;
+        }
+
+        .contact-form-page .fa-solid {
+            font-size: 1.9rem;
+            color: var(--ast-global-color-1);
+        }
+
+        .icon-contact span {
+            font-size: 1.9rem;
+            margin: 0px 10px;
+        }
+
+        .contact-form-page input,
+        .contact-form-page textarea {
+            border: 0;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #f5f5f5;
+            font-size: 16px;
+        }
+
+        .contact-form-page .btn-one {
+            padding: 15px;
+            color: white;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px 0px;
+        }
+
+        .icon {
+            margin: 10px 0px 0px 0px;
+        }
+
+        .icon .fa-brands {
+            color: var(--ast-global-color-1);
+            margin: 0px 10px 0px 0px;
+        }
+
+        /* contact heading */
+        @media(max-width:36em) {
+            .contact h1 {
+                font-size: 3rem;
+            }
+
+            .contact p {
+                line-height: 1.9;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- create navbar -->
+    <nav class="header">
+        <img src="/img/Logo/logo-dark.svg" alt="logo" class="logo" />
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="list">
+            <li><a href="index.html" class="list-item">Home</a></li>
+            <li>
+                <a href="books.html" class="list-item" target="_blank">Books</a>
+            </li>
+            <li><a href="bio.html" class="list-item" target="_blank">Bio</a></li>
+            <li>
+                <a href="contact.html" class="list-item" target="_blank">Contact</a>
+            </li>
+        </ul>
+        <nav class="icon">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+        </nav>
+    </nav>
+
+    <!-- contact -->
+    <div class="contact">
+        <div class="inner-contact">
+
+            <h1>Contact Us</h1>
+            <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                fugit
+            </p>
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <div class="container">
+        <form class="contact-form-page">
+            <h3>GET IN TOUCH</h3>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+            <div class="icon-contact">
+                <i class="fa-solid fa-envelope"></i>
+                <span>mail@example.com</span>
+
+            </div>
+            <div class="ruler">
+                <hr>
+
+            </div>
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Email id" required />
+            <input type="subject" id="subject" placeholder="Subject" required />
+            <textarea id="message" rows="4" placeholder="How can we help you" required></textarea>
+            <button class="btn-one" type="submit">Send Message</button>
+            <div class="text-icon">
+                <h5>Follow Me</h5>
+                <span class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </span>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Subscribe Now to Get Regular Updates -->
+
+    <div class="subscribe">
+        <div class="subscribe-inner">
+            <div class="subscribe-child">
+                <h2>Subscribe Now to Get <br> Regular Updates</h2>
+                <!-- subscribe form -->
+                <div class="wrapper">
+                    <form action="#" class="card-content">
+                        <div class="form-input">
+                            <label for="email"></label>
+                            <input type="email" placeholder="Your Email" />
+                            <button class="subscribe-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="subscribe-img">
+                <img src="/img/susbcribe-image.png" alt="" class="img-child">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <img src="/img/Logo/logo-white.svg" alt="logo" class="logo-footer" />
+        </label>
+        <ul class="list-footer">
+            <li><a href="#" class="list-item-footer">Home</a></li>
+            <li><a href="#" class="list-item-footer">Books</a></li>
+            <li><a href="#" class="list-item-footer">Bio</a></li>
+            <li><a href="#" class="list-item-footer">Contact</a></li>
+        </ul>
+        <div class="icon-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </footer>
+
+    <footer class="footer-end">
+        <div class="footer-copyright">
+            <p> Copyright &copy; <span id="date">2020</span> eBook Author | Powered by eBook Author
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- back to top button -->
+    <a class="scroll-link top-link" href="#">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <!-- this is for icon script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

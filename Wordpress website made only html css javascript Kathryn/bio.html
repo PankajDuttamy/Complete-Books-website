@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* books heading */
+    .books-container {
+      width: 100%;
+      min-height: 500px;
+      background-color: #fcebe7;
+    }
+
+    .inner-books-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      top: 200px;
+    }
+
+    .inner-books-container h1 {
+      font-size: 5rem;
+      font-weight: 400;
+      font-family: "DM Serif Display", serif;
+      color: var(--ast-global-color-2);
+      margin: 0px 0px 10px 0px;
+    }
+
+    .inner-books-container p {
+      font-size: 1.5rem;
+      font-family: "Sora", sans-serif;
+      font-weight: 400;
+      color: var(--ast-global-color-2);
+    }
+
+    /* A Word From The Author */
+    .main-parent .text {
+      width: 50%;
+      height: auto;
+      padding: 0px 20px;
+    }
+
+    /* Award */
+    .award-container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .award-container .title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--ast-global-color-2);
+      font-size: 2.4rem;
+      font-weight: 400;
+      font-family: "DM Serif Display", serif;
+    }
+
+    .all-award {
+      width: 100%;
+      height: auto;
+    }
+
+    .all-award-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 30px 0px 100px 0px;
+    }
+
+    .award-item {
+      text-align: center;
+    }
+
+    .award-item-image {
+      width: 50%;
+      height: auto;
+    }
+
+    .award-item h3 {
+      font-size: 2.2rem;
+      font-weight: 400;
+      font-family: "DM Serif Display", serif;
+    }
+
+    .award-item p {
+      font-size: 1.3rem;
+      margin: 20px 0px;
+    }
+
+    /* quotes */
+    .main-quotes {
+      background-color: var(--e-global-color-astglobalcolor1);
+      width: 100%;
+      height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .quotes-heading {
+      color: var(--e-global-color-astglobalcolor5);
+      font-size: 3.2rem;
+      font-weight: 400;
+      font-family: "DM Serif Display", serif;
+      margin: 0px 100px;
+      line-height: 2;
+    }
+
+    .quotes-author-name {
+      color: var(--e-global-color-astglobalcolor5);
+      font-size: 2.2rem;
+      margin: 20px 0px;
+    }
+
+    /* follow */
+    .text-icon {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 100px 0px;
+    }
+
+    .instagram-color {
+      color: var(--e-global-color-astglobalcolor1);
+      font-size: 5rem;
+    }
+
+    .text-icon h5 {
+      font-size: 4rem;
+      font-weight: 400;
+      font-family: "DM Serif Display", serif;
+      margin: 20px 0px 0px 0px;
+    }
+
+    .text-icon .span-text {
+      font-size: 1.8rem;
+      color: var(--ast-global-color-3);
+    }
+
+    .follow-btn {
+      margin: 20px 0px 0px;
+      padding: 14px 28px;
+      background-color: var(--ast-global-color-1);
+      border-radius: 5px;
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    .follow-btn:hover {
+      background-color: var(--ast-global-color-0);
+      transition: all 0.2s linear;
+    }
+
+    /* insta feed img */
+    .insta-feed {
+      width: 100%;
+      height: auto;
+      margin: 0px 0px 100px 0px;
+    }
+
+    .feed-img {
+      width: 100%;
+      height: auto;
+    }
+
+
+    /* speaker upcoming event */
+    .btn-one .btn-link-one {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+
+    /* book heading */
+    @media (max-width: 44em) {
+      .books-container {
+        min-height: 300px;
+      }
+
+      .inner-books-container {
+        top: 100px;
+        text-align: center;
+      }
+
+      .inner-books-container h1 {
+        font-size: 3.0rem;
+      }
+
+      .inner-books-container p {
+        font-size: 1.5rem;
+        margin: 10px 0px;
+
+      }
+    }
+
+
+    /* A Word From The Author media queries*/
+    @media (max-width: 69em) {
+      .main-parent {
+        margin: 30px 0px;
+        flex-direction: column-reverse;
+      }
+
+      .main-parent .text {
+        height: auto;
+        padding: 0px 20px;
+        text-align: center;
+      }
+
+      .main-parent .text-icon {
+        width: 100%;
+        height: auto;
+        margin: 30px 0px;
+      }
+    }
+
+    @media(max-width: 44em) {
+      .main-parent .text {
+        width: 100%;
+      }
+
+      .main-parent .text h2 {
+        margin: 0px 0px 10px 0px;
+      }
+
+      .main-parent .text p {
+        font-size: 20px;
+      }
+
+      .text-icon .icon {
+        font-size: 2.9rem;
+      }
+    }
+
+    /* speaker upcoming event media queries */
+    @media(max-width: 69em) {
+      .main-parent .text {
+        margin: 0px 0px 30px 0px;
+      }
+    }
+
+    /* Award */
+    @media (max-width: 69em) {
+      .all-award-inner {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      
+    }
+    @media (max-width: 44em){
+      .award-item-image{
+        width: 100%;
+        height: auto;
+      }
+      .award-item{
+        padding: 20px;
+      }
+    }
+
+    /* quotes */
+    @media (max-width: 44em) {
+      .main-quotes {
+        height: auto;
+      }
+
+      .quotes-heading {
+        margin: 0px 5px;
+        font-size: 2.2rem;
+        text-align: center;
+      }
+    }
+
+    /* follow media queries */
+    @media (max-width: 44em) {
+      .text-icon .span-text {
+        padding: 0px;
+        text-align: center;
+        padding: 0px 10px;
+        font-size: 1.5rem;
+        line-height: 2.0;
+      }
+
+      .text-icon .fa-brands {
+        margin: 0px;
+      }
+
+      .instagram-color {
+        font-size: 2.9rem;
+      }
+
+      .text-icon h5 {
+        font-size: 2.0rem;
+      }
+
+      .follow-btn {
+        margin: 0px;
+      }
+    }
+
+    /* insta feed image */
+
+    @media (max-width: 44em) {
+      .insta-feed {
+        padding: 10px;
+        margin: 0px;
+      }
+
+    }
+
+    /* speaker upcoming event */
+    @media (max-width: 44em) {
+      .btn-one {
+        display: inline;
+        margin: 10px 0px;
+      }
+    }
+
+
+
+
+    /* Subscribe Now to Get Regular Updates */
+    @media (max-width: 44em){
+      .subscribe-child h2{
+        font-size: 3.0rem;
+      }
+      input{
+        display: inline-block;
+        width: 100%;
+        
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- create navbar -->
+  <nav class="header">
+    <img src="/img/Logo/logo-dark.svg" alt="logo" class="logo" />
+    <input type="checkbox" id="click" />
+    <label for="click" class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <ul class="list">
+      <li><a href="index.html" class="list-item" target="_blank">Home</a></li>
+      <li>
+        <a href="books.html" class="list-item" target="_blank">Books</a>
+      </li>
+      <li><a href="bio.html" class="list-item" target="_blank">Bio</a></li>
+      <li>
+        <a href="contact.html" class="list-item" target="_blank">Contact</a>
+      </li>
+    </ul>
+    <nav class="icon">
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-cart-arrow-down"></i>
+    </nav>
+  </nav>
+
+  <!-- books heading -->
+  <div class="books-container">
+    <div class="inner-books-container">
+      <h1>About Kathryn</h1>
+      <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit
+      </p>
+    </div>
+  </div>
+
+  <!-- A Word From The Author -->
+  <div class="main-parent">
+    <div class="text">
+      <h2>My Story</h2>
+      <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+        tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem.
+      </p>
+      <div class="text-icon">
+        <span class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </span>
+      </div>
+    </div>
+    <div class="img-child">
+      <img src="/img/about-image-02.png" alt="This is a image01" class="girl" />
+    </div>
+  </div>
+
+  <!-- Personal Life -->
+  <div class="main-parent">
+    <div class="img-child">
+      <img src="/img/about-image.png" alt="This is a image01" class="girl" />
+    </div>
+    <div class="text">
+      <h2>Personal Life</h2>
+      <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+        tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem.
+      </p>
+    </div>
+  </div>
+
+  <!-- Award -->
+  <div class="award-container">
+    <h2 class="title">AWARDS</h2>
+    <!-- </div> -->
+  </div>
+  <div class="all-award">
+    <div class="all-award-inner">
+      <div class="award-item">
+        <img src="/img/Award/award01.png" alt="" class="award-item-image" />
+        <h3>Best Author Award 2016</h3>
+        <p>
+          Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit aut
+          fugit
+        </p>
+      </div>
+      <div class="award-item">
+        <img src="/img/Award/award02.png" alt="" class="award-item-image" />
+        <h3>World's #1 Best-selling Book 2014</h3>
+        <p>
+          Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit aut
+          fugit
+        </p>
+      </div>
+      <div class="award-item">
+        <img src="/img/Award/award03.png" alt="" class="award-item-image" />
+        <h3>NYT Best-selling Author 2013</h3>
+        <p>
+          Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit aut
+          fugit
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- quotes -->
+
+  <div class="main-quotes">
+    <h2 class="quotes-heading">
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+      fugit, sed quia consequuntur magni dolores eos qui ratione voluptatemt."
+    </h2>
+    <h5 class="quotes-author-name">Kathryn Moris</h5>
+  </div>
+
+  <!-- follow -->
+
+  <div class="text-icon">
+    <span class="icon">
+      <i class="fa-brands fa-instagram instagram-color"></i>
+    </span>
+    <h5>Follow @kathryn</h5>
+    <span class="span-text">Leo nulla cras augue eros, diam vivamus et lectus volutpat at facilisi
+      tortor porta.</span>
+    <button class="follow-btn">
+      <i class="fa-brands fa-instagram"></i>
+      Visit Instagram
+    </button>
+  </div>
+
+  <!-- insta feed image  -->
+  <div class="insta-feed">
+    <img src="/img/All img/insta-feed-2.jpg" alt="" class="feed-img" />
+  </div>
+
+
+  <!-- speaker upcoming event -->
+  <div class="main-parent">
+    <div class="img-child">
+      <img src="/img/about-image-03.png" alt="This is a image01" class="girl" />
+    </div>
+    <div class="text">
+      <h2>Need a Speaker for Your Upcoming Event?</h2>
+      <p>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+        sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+        tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem.
+      </p>
+      <button class="btn-one">
+        <a href="#" class="btn-link-one">Contact Me</a>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- Subscribe Now to Get Regular Updates -->
+
+  <div class="subscribe">
+    <div class="subscribe-inner">
+      <div class="subscribe-child">
+        <h2>Subscribe Now to Get <br> Regular Updates</h2>
+        <!-- subscribe form -->
+        <div class="wrapper">
+          <form action="#" class="card-content">
+            <div class="form-input">
+              <label for="email"></label>
+              <input type="email" placeholder="Your Email" />
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="subscribe-img">
+        <img src="/img/susbcribe-image.png" alt="" class="img-child">
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- footer -->
+   <footer class="footer">
+    <img src="/img/Logo/logo-white.svg" alt="logo" class="logo-footer" />
+    </label>
+    <ul class="list-footer">
+      <li><a href="#" class="list-item-footer">Home</a></li>
+      <li><a href="#" class="list-item-footer">Books</a></li>
+      <li><a href="#" class="list-item-footer">Bio</a></li>
+      <li><a href="#" class="list-item-footer">Contact</a></li>
+    </ul>
+    <div class="icon-footer">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+  </footer>
+
+  <footer class="footer-end">
+    <div class="footer-copyright">
+      <p> Copyright &copy; <span id="date">2020</span> eBook Author | Powered by eBook Author
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- back to top button -->
+  <a class="scroll-link top-link" href="#">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+
+
+  <!-- this is for icon script -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
